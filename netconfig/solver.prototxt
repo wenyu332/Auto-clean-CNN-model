@@ -1,0 +1,17 @@
+net: "train_auto_clean.prototxt"
+test_iter: 7
+test_interval: 256
+
+# base_lr: 0.001
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.5
+stepsize: 200
+display: 500
+max_iter: 8000
+# max_iter: 1
+momentum: 0.9
+weight_decay: 0.005
+snapshot: 500
+snapshot_prefix: "netmodel/"
+solver_mode: GPU
